@@ -1,0 +1,6 @@
+version: "3"
+
+services:
+  mybuild:
+    image: naumanbadar/utils:1.0
+    build: .
