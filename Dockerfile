@@ -1,6 +1,6 @@
 FROM ubuntu:16.04
 
-# set correct time zone. In my case it is Stockholm. This is a temporary fix until docker fixes the issue of always getting container with UTC timezone.
+# set correct time zone. In my case it is Stockholm.
 ENV TZ=Europe/Stockholm
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
